@@ -1,0 +1,25 @@
+
+body {
+    text-align: center;
+    background-color: beige;
+    background-image: url(https://imgs.search.brave.com/UzKu-sRhVzUqI_uvGuQFiCEp6rkSTdYXrg6G2aEliDM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNzAv/NTczLzUyOC9zbWFs/bC9yYWNpbmctY2ly/Y3VpdC1wZXJzcGVj/dGl2ZS13aXRoLWZp/bmlzaC1saW5lLWdy/YW5kc3RhbmRzLWFu/ZC1jaXR5c2NhcGUt/YmFja2dyb3VuZC1p/ZGVhbC1mb3ItbW90/b3JzcG9ydC10aGVt/ZXMtcGhvdG8uanBl/Zw);
+    background-size: cover;
+    color: black;
+}
+img{
+    float: left;
+}
+section{
+    color: blue;
+    border: 5px dashed blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 25px;
+}
+footer{
+    clear: both;
+    font-size: xx-large;
+    font-weight: 200;
+}
+.button {
+    color: brown;
+}
