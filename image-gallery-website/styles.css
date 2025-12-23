@@ -13,11 +13,13 @@ img {
 h1 {
     
     font-size: 3em;
-    border: solid 20px;
+    border-bottom: solid 3px;
+    border-right: solid 3px;
     border-color: aqua;
     font-family: fantasy;
     width: 400px;
     text-align: center;
+    box-shadow: 4px 4px 5px #888888;
 
 }
 img:hover {
