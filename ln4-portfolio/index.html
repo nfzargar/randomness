@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Your Name — CS Portfolio</title>
+  <meta name="description" content="Computer science portfolio: projects, skills, and contact." />
+
+  <!-- Optional: OpenGraph for sharing -->
+  <meta property="og:title" content="Your Name — CS Portfolio" />
+  <meta property="og:description" content="Projects, skills, and contact." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="nav" data-nav-theme="light">
+    <div class="nav-inner container">
+      <a class="brand" href="#" aria-label="Go to home">
+        <!-- Replace with your logo SVG/text -->
+        <span class="brand-mark">YN</span>
+        <span class="brand-text">YourName.dev</span>
+      </a>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="#projects">
+          Projects
+        </a>
+
+        <button
+          class="hamburger"
+          type="button"
+          aria-expanded="false"
+          aria-controls="navMenu"
+          aria-label="Open menu"
+          data-menu-button
+        >
+          <span class="hamburger-lines" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- OVERLAY MENU (like the example site) -->
+    <div class="menu" id="navMenu" hidden data-menu>
+      <div class="menu-backdrop" data-menu-backdrop></div>
+
+      <div class="menu-panel container" role="dialog" aria-modal="true" aria-label="Site menu">
+        <div class="menu-grid">
+          <!-- Left: images (placeholders) -->
+          <div class="menu-images" aria-hidden="true">
+            <div class="menu-img">
+              <img src="assets/menu-1.jpg" alt="" />
+            </div>
+            <div class="menu-img">
+              <img src="assets/menu-2.jpg" alt="" />
+            </div>
+          </div>
+
+          <!-- Right: links -->
+          <nav class="menu-links" aria-label="Menu links">
+            <a class="menu-link" href="#home">Home</a>
+            <a class="menu-link" href="#projects">Projects</a>
+            <a class="menu-link" href="#about">About</a>
+            <a class="menu-link" href="#skills">Skills</a>
+            <a class="menu-link" href="#contact">Contact</a>
+
+            <div class="menu-divider"></div>
+
+            <a class="menu-link subtle" href="https://github.com/USERNAME" target="_blank" rel="noreferrer">
+              GitHub →
+            </a>
+            <a class="menu-link subtle" href="https://www.linkedin.com/in/USERNAME" target="_blank" rel="noreferrer">
+              LinkedIn →
+            </a>
+
+            <div class="menu-actions">
+              <button class="btn btn-ghost" type="button" data-theme-toggle>
+                Toggle theme
+              </button>
+
+              <button class="btn btn-primary" type="button" data-menu-close>
+                Close
+              </button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">computer science • portfolio</p>
+          <h1>
+            I build <span class="accent">products</span>, <span class="accent">apps</span>,
+            and <span class="accent">systems</span>.
+          </h1>
+          <p class="lead">
+            Short 1–2 lines about what you do: web, AI, graphics, systems, trading tools—whatever you want.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn btn-ghost" href="#contact">Contact</a>
+          </div>
+
+          <div class="hero-meta">
+            <span class="pill">📍 Illinois / NYC</span>
+            <span class="pill">💻 Full-Stack / CS</span>
+            <span class="pill">⚡ Available for internships</span>
+          </div>
+        </div>
+
+        <div class="hero-media" aria-hidden="true">
+          <!-- Replace hero image -->
+          <img src="assets/hero.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p class="muted">Clickable cards. Link to GitHub, live demo, or a write-up page.</p>
+        </div>
+
+        <div class="cards">
+          <!-- Project 1 -->
+          <article class="card">
+            <div class="card-media">
+              <img src="assets/project-1.jpg" alt="Project screenshot placeholder" />
+            </div>
+
+            <div class="card-body">
+              <div class="card-top">
+                <h3>Project Name One</h3>
+                <div class="tags">
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">WebGL</span>
+                  <span class="tag">HTML/CSS</span>
+                </div>
+              </div>
+
+              <p class="muted">
+                1–2 sentence description: what it does, what problem it solves, what’s interesting technically.
+              </p>
+
+              <div class="card-links">
+                <a class="btn btn-primary" href="https://your-live-demo.com" target="_blank" rel="noreferrer">Live demo</a>
+                <a class="btn btn-ghost" href="https://github.com/USERNAME/repo" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card">
+            <div class="card-media">
+              <img src="assets/project-2.jpg" alt="Project screenshot placeholder" />
+            </div>
+
+            <div class="card-body">
+              <div class="card-top">
+                <h3>Project Name Two</h3>
+                <div class="tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">AI</span>
+                  <span class="tag">API</span>
+                </div>
+              </div>
+
+              <p class="muted">
+                What you built, key features, and what you learned (auth, databases, deployment, etc.).
+              </p>
+
+              <div class="card-links">
+                <a class="btn btn-primary" href="#" target="_blank" rel="noreferrer">Case study</a>
+                <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Add more cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section alt">
+      <div class="container two-col">
+        <div>
+          <h2>About</h2>
+          <p class="muted">
+            Write a short story: what you’re studying, what you’re building, and what direction you’re aiming for.
+          </p>
+        </div>
+
+        <div class="panel">
+          <h3>Quick facts</h3>
+          <ul class="list">
+            <li>🎓 CS student (your school)</li>
+            <li>🧠 Interests: web dev, systems, graphics, AI</li>
+            <li>🏃 Athlete / hobbies (optional)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p class="muted">Keep it honest + job-friendly.</p>
+        </div>
+
+        <div class="skills">
+          <div class="skill">
+            <h3>Frontend</h3>
+            <p class="muted">HTML, CSS, JS, React (if you use it), accessibility</p>
+          </div>
+          <div class="skill">
+            <h3>Backend</h3>
+            <p class="muted">Node/Express, Python, REST APIs, auth, DBs</p>
+          </div>
+          <div class="skill">
+            <h3>Tools</h3>
+            <p class="muted">Git/GitHub, Docker (if), Linux, testing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">Make it easy to reach you.</p>
+        </div>
+
+        <div class="contact">
+          <a class="btn btn-primary" href="mailto:you@email.com">Email me</a>
+          <a class="btn btn-ghost" href="https://github.com/USERNAME" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/USERNAME" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="muted">© <span id="year"></span> Your Name. Built with HTML/CSS/JS.</p>
+      <a class="muted" href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
