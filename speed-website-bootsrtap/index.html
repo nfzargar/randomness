@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-Fastrack-Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="styles.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        </div>
+    </div>
+    </nav>
+    <div class="row">
+    <div class="card" style="width: 18rem;">
+        <img src="https://imgs.search.brave.com/hpnjSMFx8_XPbg1hKcqBWw4Ic0Z9acZbfUvhVghX9hw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9mb3Jt/dWxhb25laGVsbWV0/LmNvbS9jZG4vc2hv/cC9maWxlcy9oZWxt/ZXQtTC1Ob3JyaXMt/MjAyNS1GMV9ncmFu/ZGUuanBnP3Y9MTc0/NzQzODQ2NA" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="https://imgs.search.brave.com/PEM38ruM-i9iRDHQN9OvEGQFadxm46iWxyBbQIVs4j4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/dGhlZHJpdmUuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy9pbWFn/ZXMtYnktdXJsLXRk/L2NvbnRlbnQvMjAy/MC8wNy9sYW5kby1u/b3JyaXMtaGVsbWV0/LmpwZz9xdWFsaXR5/PTg1Jnc9MTkyMA" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="https://imgs.search.brave.com/f_CLVvjOFnhJjbnzMfERzkbEmfl3dIxqGhABq0CZPUY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9mb3Jt/dWxhb25laGVsbWV0/LmNvbS9jZG4vc2hv/cC9maWxlcy9SZXBs/aWNhLWhlbG1ldC1m/b3JtdWxhLTEtQVZf/NTAxNzQ0ZmEtMmFh/NC00Y2Y4LThkZWQt/YTUyMzcwNGNjZWRm/X2dyYW5kZS5qcGc_/dj0xNzY0OTM0NjIw" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    </div>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="https://imgs.search.brave.com/X7AOUDkHkpEZLJKdYcPsNzvu5JC86GAHfFW3y-5lQTc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjE2/MjkwNTA0Ni9waG90/by9idWRhcGVzdC1o/dW5nYXJ5LXNlY29u/ZC1wbGFjZWQtbGFu/ZG8tbm9ycmlzLW9m/LWdyZWF0LWJyaXRh/aW4tYW5kLW1jbGFy/ZW4tc3RhbmRzLW9u/LXRoZS1wb2RpdW0u/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PXhwRGVCMklVcktZ/eVFJUnVHLVM5b3FW/TXJqU3hwd2pES0N0/WndpYnh3SUU9" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="https://imgs.search.brave.com/NB2iAEqC7UVBWnByPHZAIIjjt4JqhSW0KZb3L21B0TY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9sYW5k/by1ub3JyaXMtZ2Jy/LW1jbGFyZW4taHVu/Z2FyeS1idWRhcGVz/dC1qdWwtcGFyYy1m/ZXJtZS1mLWh1bmdh/cmlhbi1ncmFuZC1w/cml4LTMyNzUzMzU4/OS5qcGc" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="https://imgs.search.brave.com/KymKmKVnhwe---1n7thVjI7lytDHCKLEBmgJnuXfgaw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjE2/OTU5Nzg0NC9waG90/by9tb256YS1pdGFs/eS1sYW5kby1ub3Jy/aXMtb2YtZ3JlYXQt/YnJpdGFpbi1hbmQt/bWNsYXJlbi1leGl0/cy10aGUtY2FyLWlu/LXRoZS1waXRsYW5l/LWR1cmluZy5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9eDht/V3B1cEZUaTNkU25Q/WXdWTGxRcnZOaVFo/TVNYaGF5VS1VOGUy/amF2az0" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
