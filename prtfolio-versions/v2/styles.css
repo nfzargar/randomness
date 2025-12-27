@@ -18,6 +18,7 @@ body {
     background-color: var(--primary-bg);
     color: var(--text-white);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 nav {
@@ -307,11 +308,14 @@ nav li {
 .carousel-container {
     max-width: 1200px;
     margin: 0 auto;
+    overflow: hidden;
+    position: relative;
 }
 
 .carousel-track {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    width: 100%;
 }
 
 .carousel-item {
