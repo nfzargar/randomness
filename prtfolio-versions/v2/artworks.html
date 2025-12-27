@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artworks</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav-brand">Your Name</div>
+    <ul>
+      <li><a href="index.html#home">About</a></li>
+      <li><a href="index.html#education">Education</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#projects-carousel">Projects</a></li>
+      <li><a href="artworks.html">Artworks</a></li>
+      <li><a href="#" onclick="openResume(); return false;">Resume</a></li>
+    </ul>
+  </nav>
+
+  <section style="padding: 5rem 3rem; margin-top: 60px; max-width: 1200px; margin-left: auto; margin-right: auto;">
+    <h2 class="section-title" style="margin-bottom: 2rem;">Artworks</h2>
+    <p style="color: var(--text-gray); font-size: 1.2rem; line-height: 1.8;">
+      A simple grid of artwork. Replace the placeholders with your real images + captions.
+    </p>
+
+    <div class="artworks-grid">
+      <div class="artwork-card">
+        <img src="artwork1.jpg" alt="Artwork 1" />
+        <div class="artwork-meta">
+          <h4>Artwork Title 1</h4>
+          <p>Short description under the image.</p>
+        </div>
+      </div>
+
+      <div class="artwork-card">
+        <img src="artwork2.jpg" alt="Artwork 2" />
+        <div class="artwork-meta">
+          <h4>Artwork Title 2</h4>
+          <p>Short description under the image.</p>
+        </div>
+      </div>
+
+      <div class="artwork-card">
+        <img src="artwork3.jpg" alt="Artwork 3" />
+        <div class="artwork-meta">
+          <h4>Artwork Title 3</h4>
+          <p>Short description under the image.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
