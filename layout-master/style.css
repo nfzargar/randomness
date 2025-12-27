@@ -75,6 +75,11 @@ a {
     justify-content: center;
     align-items: center;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************
