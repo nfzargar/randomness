@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - CS Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-brand">Your Name</div>
+        <ul>
+            <li><a href="index.html#home">About</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="artworks.html">Artworks</a></li>
+            <li><a href="#" onclick="openResume(); return false;">Resume</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content" style="margin-top: 60px;">
+        <!-- Project 1 -->
+        <section id="project-1" class="project-section">
+            <h2 class="section-title">MOOOVE!</h2>
+            
+            <!-- Image Carousel for Screenshots -->
+            <div class="project-carousel-container">
+                <div class="project-carousel-track" id="carousel-1">
+                    <div class="project-carousel-item">
+                        <img src="project1-screenshot1.jpg" alt="MOOOVE! Screenshot 1">
+                    </div>
+                    <div class="project-carousel-item">
+                        <img src="project1-screenshot2.jpg" alt="MOOOVE! Screenshot 2">
+                    </div>
+                    <div class="project-carousel-item">
+                        <img src="project1-screenshot3.jpg" alt="MOOOVE! Screenshot 3">
+                    </div>
+                </div>
+                <div class="project-carousel-controls">
+                    <button class="carousel-btn" onclick="previousProjectSlide(1)">&#60;</button>
+                    <button class="carousel-btn" onclick="nextProjectSlide(1)">&#62;</button>
+                </div>
+            </div>
+
+            <!-- Short Description with Bullet Points -->
+            <div class="project-short-description">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Turn-based combat system</li>
+                    <li>Play as a cow fighting rogue farm animals</li>
+                    <li>Built with C++ and Google Test framework</li>
+                    <li>Object-oriented programming principles</li>
+                </ul>
+            </div>
+
+            <!-- Detailed Description -->
+            <div class="project-detailed-description">
+                <h3>Detailed Description</h3>
+                <p>A turn-based game where the player plays as a cow and fights against rogue farm animals, created using C++ and Google tests. This project demonstrates strong object-oriented programming principles, with a focus on clean code architecture and comprehensive testing. The game features a strategic combat system that requires players to think carefully about their moves.</p>
+                <p>The project was developed as part of my coursework and showcases my ability to work with complex game logic, implement design patterns, and write maintainable code. Future enhancements could include multiplayer functionality and additional character classes.</p>
+            </div>
+        </section>
+
+        <!-- Project 2 -->
+        <section id="project-2" class="project-section">
+            <h2 class="section-title">Project 2</h2>
+            
+            <!-- Image Carousel for Screenshots -->
+            <div class="project-carousel-container">
+                <div class="project-carousel-track" id="carousel-2">
+                    <div class="project-carousel-item">
+                        <img src="project2-screenshot1.jpg" alt="Project 2 Screenshot 1">
+                    </div>
+                    <div class="project-carousel-item">
+                        <img src="project2-screenshot2.jpg" alt="Project 2 Screenshot 2">
+                    </div>
+                </div>
+                <div class="project-carousel-controls">
+                    <button class="carousel-btn" onclick="previousProjectSlide(2)">&#60;</button>
+                    <button class="carousel-btn" onclick="nextProjectSlide(2)">&#62;</button>
+                </div>
+            </div>
+
+            <!-- Short Description with Bullet Points -->
+            <div class="project-short-description">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Feature 1 description</li>
+                    <li>Feature 2 description</li>
+                    <li>Feature 3 description</li>
+                </ul>
+            </div>
+
+            <!-- Detailed Description -->
+            <div class="project-detailed-description">
+                <h3>Detailed Description</h3>
+                <p>Description of your second project goes here. This section provides a comprehensive overview of the project, including its purpose, technologies used, challenges faced, and outcomes achieved.</p>
+                <p>Add more detailed information about the technical implementation, design decisions, and any notable achievements or learnings from this project.</p>
+            </div>
+        </section>
+
+        <!-- Project 3 -->
+        <section id="project-3" class="project-section">
+            <h2 class="section-title">Project 3</h2>
+            
+            <!-- Image Carousel for Screenshots -->
+            <div class="project-carousel-container">
+                <div class="project-carousel-track" id="carousel-3">
+                    <div class="project-carousel-item">
+                        <img src="project3-screenshot1.jpg" alt="Project 3 Screenshot 1">
+                    </div>
+                    <div class="project-carousel-item">
+                        <img src="project3-screenshot2.jpg" alt="Project 3 Screenshot 2">
+                    </div>
+                    <div class="project-carousel-item">
+                        <img src="project3-screenshot3.jpg" alt="Project 3 Screenshot 3">
+                    </div>
+                </div>
+                <div class="project-carousel-controls">
+                    <button class="carousel-btn" onclick="previousProjectSlide(3)">&#60;</button>
+                    <button class="carousel-btn" onclick="nextProjectSlide(3)">&#62;</button>
+                </div>
+            </div>
+
+            <!-- Short Description with Bullet Points -->
+            <div class="project-short-description">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Feature 1 description</li>
+                    <li>Feature 2 description</li>
+                    <li>Feature 3 description</li>
+                </ul>
+            </div>
+
+            <!-- Detailed Description -->
+            <div class="project-detailed-description">
+                <h3>Detailed Description</h3>
+                <p>Description of your third project goes here. This section provides a comprehensive overview of the project, including its purpose, technologies used, challenges faced, and outcomes achieved.</p>
+                <p>Add more detailed information about the technical implementation, design decisions, and any notable achievements or learnings from this project.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Project carousel functionality
+        const projectCarousels = {};
+
+        function initProjectCarousel(carouselId) {
+            const track = document.getElementById(`carousel-${carouselId}`);
+            if (!track) return;
+            
+            const items = track.querySelectorAll('.project-carousel-item');
+            if (!projectCarousels[carouselId]) {
+                projectCarousels[carouselId] = {
+                    currentSlide: 0,
+                    totalSlides: items.length
+                };
+            }
+        }
+
+        function nextProjectSlide(carouselId) {
+            if (!projectCarousels[carouselId]) {
+                initProjectCarousel(carouselId);
+            }
+            const carousel = projectCarousels[carouselId];
+            carousel.currentSlide = (carousel.currentSlide + 1) % carousel.totalSlides;
+            updateProjectCarousel(carouselId);
+        }
+
+        function previousProjectSlide(carouselId) {
+            if (!projectCarousels[carouselId]) {
+                initProjectCarousel(carouselId);
+            }
+            const carousel = projectCarousels[carouselId];
+            carousel.currentSlide = (carousel.currentSlide - 1 + carousel.totalSlides) % carousel.totalSlides;
+            updateProjectCarousel(carouselId);
+        }
+
+        function updateProjectCarousel(carouselId) {
+            const track = document.getElementById(`carousel-${carouselId}`);
+            if (!track || !projectCarousels[carouselId]) return;
+            track.style.transform = `translateX(-${projectCarousels[carouselId].currentSlide * 100}%)`;
+        }
+
+        // Initialize all carousels on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            initProjectCarousel(1);
+            initProjectCarousel(2);
+            initProjectCarousel(3);
+
+            // Handle anchor navigation
+            if (window.location.hash) {
+                const target = document.querySelector(window.location.hash);
+                if (target) {
+                    setTimeout(() => {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
