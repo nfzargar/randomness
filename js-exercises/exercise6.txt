@@ -1,0 +1,50 @@
+// using this array,
+a
+
+
+// 1. Remove the Banana from the array.
+
+// 2. Sort the array in order.
+
+// 3. Put "Kiwi" at the end of the array.
+
+// 4. Remove "Apples" from the array.
+
+// 5. Sort the array in reverse order. (Not alphabetical, but reverse
+// the current Array i.e. ['a', 'c', 'b'] becomes ['b', 'c', 'a'])
+
+you should have at the end:
+["Kiwi", "Oranges", "Blueberries"]
+
+// using this array,
+// var array2 = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+// access "Oranges".
+
+var array = ["Banana", "Apples", "Oranges", "Blueberries"];
+undefined
+array
+(4) ['Banana', 'Apples', 'Oranges', 'Blueberries']
+array.sh
+undefined
+array.shift
+ƒ shift() { [native code] }
+array.shift();
+'Banana'
+array
+(3) ['Apples', 'Oranges', 'Blueberries']
+array.sort()
+(3) ['Apples', 'Blueberries', 'Oranges']
+var array = array.concat("Kiwi");
+undefined
+array
+(4) ['Apples', 'Blueberries', 'Oranges', 'Kiwi']
+array.shift();
+'Apples'
+array
+(3) ['Blueberries', 'Oranges', 'Kiwi']
+array.reverse();
+(3) ['Kiwi', 'Oranges', 'Blueberries']
+var array2 = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+undefined
+array2[1][1]
+['Oranges']
