@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Settings Modal -->
+  <div id="settingsModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Settings</h2>
+        <button class="close-btn" id="closeSettings">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="settings-section">
+          <h3>Google Sheets Integration</h3>
+          <p class="settings-description">Connect your Google account to automatically sync your habit data to a Google Sheet.</p>
+          <div id="authStatus" class="auth-status">Not connected</div>
+          <button id="connectGoogleBtn" class="btn btn-primary">Connect Google Sheets</button>
+          
+          <div id="sheetConfig" class="sheet-config" style="display: none;">
+            <label for="spreadsheetId">Spreadsheet ID:</label>
+            <input type="text" id="spreadsheetId" placeholder="Enter your Google Sheet ID">
+            <p class="help-text">You can find this in your sheet URL: docs.google.com/spreadsheets/d/<strong>SPREADSHEET_ID</strong>/edit</p>
+            <button id="saveSheetConfig" class="btn btn-secondary">Save Configuration</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Edit Habits Modal -->
+  <div id="editHabitsModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Edit Habits</h2>
+        <button class="close-btn" id="closeEditHabits">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div id="habitsList" class="habits-edit-list"></div>
+        <button id="addHabitBtn" class="btn btn-primary">+ Add New Habit</button>
+      </div>
+      <div class="modal-footer">
+        <button id="saveHabitsBtn" class="btn btn-success">Save Changes</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Tracker Container -->
+  <div class="tracker-container">
+    <!-- Header -->
+    <div class="tracker-header">
+      <div class="header-top">
+        <h1 id="currentMonth"></h1>
+        <button id="settingsBtn" class="icon-btn" title="Settings">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M12 1v6m0 6v6m8.66-9l-5.2 3m-6.92 4l-5.2 3M3.34 6l5.2 3m6.92 4l5.2 3"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="stats-bar">
+        <div class="stat-item">
+          <div class="stat-label">Habits</div>
+          <div class="stat-value" id="totalHabits">0</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">Completed</div>
+          <div class="stat-value" id="completedCount">0</div>
+        </div>
+        <div class="stat-item progress-stat">
+          <div class="progress-bar-container">
+            <div class="progress-bar" id="progressBar"></div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">Progress</div>
+          <div class="stat-value" id="progressPercent">0%</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tracker Grid -->
+    <div class="tracker-body">
+      <div class="grid-container">
+        <!-- Habits Column (Fixed) -->
+        <div class="habits-column">
+          <div class="column-header">My Habits</div>
+          <div id="habitsLabels" class="habits-labels"></div>
+        </div>
+
+        <!-- Days Grid (Scrollable) -->
+        <div class="days-scroll-container">
+          <div class="days-grid" id="daysGrid"></div>
+        </div>
+      </div>
+
+      <!-- Summary Row -->
+      <div class="summary-row" id="summaryRow"></div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls-bar">
+      <button id="editHabitsBtn" class="btn btn-secondary">Edit Habits</button>
+      <button id="archiveMonthBtn" class="btn btn-danger">Archive Month</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
